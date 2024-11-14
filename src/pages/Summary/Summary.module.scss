@@ -1,0 +1,94 @@
+@import '../../styles/variables';
+
+.resume-container {
+  padding-top: 97px;
+  padding-bottom: 97px;
+
+  .resume-container__arrow-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    div {
+      color: $color-blue;
+      font-weight: bold;
+    }
+  }
+
+  .resume-container__title {
+    margin-bottom: 48px;
+    font-size: $font-size-40;
+  }
+
+  .resume-container__details {
+    box-shadow: 0 1px 10px 0 #aeacf35e;
+    background: $color-white;
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px 32px;
+    box-sizing: border-box;
+
+    .details-card__subtitle {
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .details-card__name {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      p {
+        margin: 0;
+        font-size: $font-size-20;
+        font-weight: bold;
+      }
+    }
+
+    .details-card__container {
+      display: flex;
+      gap: 6px;
+      flex-direction: column;
+    }
+    .details-card__title {
+      font-size: $font-size-16;
+      font-weight: $font-weight-600;
+      margin: 0;
+    }
+    .details-card__item {
+      font-size: $font-size-14;
+      line-height: $line-height-24;
+      margin: 0;
+    }
+
+    .details-card__content {
+      margin-top: 15px;
+      display: flex;
+      gap: 6px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .resume-container {
+    padding-top: 57px;
+
+    .resume-container__title {
+      font-size: $font-size-32;
+      margin-bottom: 40px;
+    }
+
+    .resume-container__arrow-container {
+      display: none;
+    }
+
+    .resume-container__details-card {
+      height: fit-content;
+    }
+  }
+}

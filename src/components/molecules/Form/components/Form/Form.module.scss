@@ -1,0 +1,70 @@
+@import '../../../../../styles/variables';
+
+.form-container {
+  .form-container__document {
+    display: flex;
+  }
+  a {
+    font-size: $font-size-12;
+    font-weight: $font-weight-600;
+    color: $color-dark-black;
+    margin-top: 4px;
+  }
+
+  button {
+    display: block;
+    border-radius: $radius-40;
+    padding: 20px 40px;
+    border: none;
+    font-size: $font-size-20;
+    font-weight: bold;
+    background: $color-dark-black;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  .form-container__error-message {
+    font-size: $font-size-12;
+    font-weight: bold;
+    color: $color-red;
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .form-container {
+    button {
+      width: 100%;
+      font-size: $font-size-18;
+      margin-top: 36px;
+    }
+  }
+
+}
+
+.errors {
+  color: $color-light-red; 
+  font-size: $font-size-14;
+  margin-top: 8px;
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: $color-light-red;
+  }
+
+  &__message {
+    display: inline-block;
+    font-weight: 500;
+  }
+
+  input {
+    border-color: $color-light-red;
+  }
+}

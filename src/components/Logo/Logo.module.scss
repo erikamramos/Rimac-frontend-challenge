@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+.logo-container {
+    &.white {
+      svg {
+        g {
+          path {
+            fill: $color-white;
+  
+          }
+        }
+  
+      }
+    }
+    &.black {
+      svg {
+        g {
+          path {
+            fill: $color-black;
+  
+          }
+        }
+  
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: $font-weight-400; /* Regular */
+  src: url('../assets/fonts/BRSonoma-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: $font-weight-600; /* SemiBold */
+  src: url('../assets/fonts/BRSonoma-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: url('../assets/fonts/BRSonoma-Bold.otf') format('opentype');
+}

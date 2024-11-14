@@ -1,0 +1,57 @@
+@import './_variables.scss';
+@import './_fonts.scss';
+
+:root {
+  font-family: 'BRSonoma', sans-serif;
+  font-size: $font-size-base;
+  color: $color-dark-gray;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-light-background;
+  min-height: 100vh;
+}
+
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .px-mobile-24 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .mobile {
+    display: none;
+  }
+}
+  
+  
+.loading {
+  font-size: 16px;
+  color: $color-blue;
+  text-align: center;
+
+  &__spinner {
+    margin: 0 auto;
+    border: 4px solid rgba(79, 79, 255, 0.3);
+    border-top: 4px solid #4F4FFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
